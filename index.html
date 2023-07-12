@@ -2,21 +2,59 @@
 <html>
   <head>
     <title>rebecca wang</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="blurb">
-        <h1>Hi there, I'm Rebecca!</h1>
-        <p>Who am I?</p>
+    <header class="top-bar">
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('about')">about</a></li>
+          <li><a href="#" onclick="showSection('hobbies')">hobbies</a></li>
+          <li><a href="#">projects</a></li>
+          <li><a href="#">resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="blurb">
+          <h1>Hi there, I'm Rebecca!</h1>
+          <p>
+            I am a computer science student at the University of Texas in Austin
+            with an interest in web development and UI/UX.
+          </p>
+        </div>
       </div>
-    </div>
-    <footer>
-      <ul>
-        <li><a href="mailto:rwang1129@gmail.com">email</a></li>
-        <li>
-          <a href="https://github.com/rebroccoli">github.com/rebroccoli</a>
-        </li>
-      </ul>
-    </footer>
+      <footer>
+        <ul>
+          <a href="mailto:rwang1129@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+          <a href="https://github.com/rebroccoli"><i class="fab fa-github fa-3x"></i></a>
+        </ul>
+      </footer>
+    </section>
+    <section id="hobbies" class="hidden">
+      <div class="container">
+        <div class="blurb">
+          <p>blah blah blah</p>
+        </div>
+      </div>
+    </section>
+    <section id="resume" class="hidden"></section>
+    <script>
+      function showSection(sectionId) {
+        var sections = document.getElementsByTagName("section");
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].classList.add("hidden");
+        }
+        var section = document.getElementById(sectionId);
+        section.classList.remove("hidden");
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </body>
 </html>
