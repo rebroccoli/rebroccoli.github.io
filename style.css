@@ -38,7 +38,7 @@ h2 {
 }
 
 .top-bar ul li a {
-  color: #797B84;
+  color: #797b84;
   text-decoration: none;
 }
 
@@ -47,25 +47,33 @@ h2 {
 }
 
 .fa-envelope {
-  color: #EDD2E0; /* Change this value to your desired color */
+  color: #edd2e0; /* Change this value to your desired color */
 }
 
 .fa-github {
-    color: #EDD2E0;
+  color: #edd2e0;
 }
 
 .fa-linkedin-in {
-    color: #EDD2E0
+  color: #edd2e0;
 }
 .icon-spacing {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .icon-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list li {
+  list-style: none;
+}
+
+.icon-list li:not(:last-child) {
+  margin-right: 10px;
 }
