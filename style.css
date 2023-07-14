@@ -38,7 +38,7 @@ h2 {
 }
 
 .top-bar ul li a {
-  color: #555;
+  color: #797B84;
   text-decoration: none;
 }
 
@@ -47,5 +47,25 @@ h2 {
 }
 
 .fa-envelope {
-  color: #797B84; /* Change this value to your desired color */
+  color: #EDD2E0; /* Change this value to your desired color */
+}
+
+.fa-github {
+    color: #EDD2E0;
+}
+
+.fa-linkedin-in {
+    color: #EDD2E0
+}
+.icon-spacing {
+    margin: 0 10px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    list-style: none;
+    padding: 0;
 }
