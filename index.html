@@ -8,14 +8,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
+
   <body>
     <header class="top-bar">
       <nav>
         <ul>
           <li><a href="#" onclick="showSection('about')">about</a></li>
           <li><a href="#" onclick="showSection('hobbies')">hobbies</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">resume</a></li>
+          <li><a href="#" onclick="showSection('projects')">projects</a></li>
+          <li><a href="#" onclick="showSection('resume')">resume</a></li>
         </ul>
       </nav>
     </header>
@@ -37,24 +38,47 @@
         </ul>
       </footer>
     </section>
+
     <section id="hobbies" class="hidden">
       <div class="container">
         <div class="blurb">
-          <p>blah blah blah</p>
+          <p>blah blah BLAH</p>
         </div>
       </div>
     </section>
-    <section id="resume" class="hidden"></section>
+
+        
+    <section id="resume" class="hidden">
+        <div class="container">
+          <div class="blurb">
+            <p>blah blah blah</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- <section id="resume" class="hidden">
+      <div class="container">
+        <div class="work">
+          <h1>Work Experience</h1>
+          <h2>Research Assistant | University of Houston </h2>
+        </div>
+      </div>
+        
+    </section> -->
+
     <script>
       function showSection(sectionId) {
+        // remove the existing page
         var sections = document.getElementsByTagName("section");
         for (var i = 0; i < sections.length; i++) {
           sections[i].classList.add("hidden");
         }
+        // load in new page 
         var section = document.getElementById(sectionId);
         section.classList.remove("hidden");
       }
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </body>
 </html>
