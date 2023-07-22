@@ -7,8 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.25">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.25" />
   </head>
 
   <body>
@@ -18,7 +17,6 @@
           <li><a href="#" onclick="showSection('about')">about</a></li>
           <li><a href="#" onclick="showSection('hobbies')">hobbies</a></li>
           <li><a href="#" onclick="showSection('projects')">projects</a></li>
-          <li><a href="#" onclick="showSection('resume')">resume</a></li>
         </ul>
       </nav>
     </header>
@@ -29,23 +27,36 @@
           <h1>Hey, I'm Rebecca!</h1>
           <p>
             I am a computer science student at the University of Texas in Austin
-            with an interest in web development and UI/UX. I am fluent in Java, Python, and C. 
-            I have experience with iOS app development, generative AI models, and 
-            website development. 
+            with an interest in web development and UI/UX. I am proficient in
+            Java, JavaScript, Python, and C. I have experience with website
+            development, generative AI models, and iOS app development.
           </p>
           <p>
-            In my free time, I love to bake, draw, and make Spotify playlists! I am also a big 
-            history buff and plan to work towards a certificate in Asian American studies. 
+            In my free time, I love to bake and draw. I am also a big history
+            buff and plan to work towards a certificate in Asian American
+            studies. Contact me below!
           </p>
         </div>
       </div>
       <footer>
-        <ul class = "icon-list">
-          <li><a href="mailto:rwang1129@gmail.com"><i class="fas fa-envelope fa-3x"></i></a></li>
+        <ul class="icon-list">
+          <li>
+            <a href="mailto:rwang1129@gmail.com"
+              ><i class="fas fa-envelope fa-3x"></i
+            ></a>
+          </li>
           <li><span class="icon-spacing"></span></li>
-          <li><a href="https://github.com/rebroccoli"><i class="fab fa-github fa-3x"></i></a></li>
+          <li>
+            <a href="https://github.com/rebroccoli"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
+          </li>
           <li><span class="icon-spacing"></span></li>
-          <li><a href = "https://www.linkedin.com/in/rebeccawang1129/"><i class= "fab fa-linkedin-in fa-3x"></i></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/rebeccawang1129/"
+              ><i class="fab fa-linkedin-in fa-3x"></i
+            ></a>
+          </li>
         </ul>
       </footer>
     </section>
@@ -53,19 +64,20 @@
     <section id="hobbies" class="hidden">
       <div class="container">
         <div class="blurb">
-          <p>blah blah blah</p>
+          <p></p>
         </div>
       </div>
     </section>
 
-    <section id="resume" class="hidden">
-      <div class="container">
-        <div class="work">
-          <h1>Work Experience</h1>
-          <h4 style="margin-left: 20px;">Research Assistant | University of Houston </h4>
-          <h4 style="margin-left: 20px;">Business Intern | Sesh Coworking </h4>
-        </div>
-      </div>
+    <section id="projects" class="hidden">
+      <h3><a href="https://github.com/rebroccoli/magic-8-ball">magic 8 ball chrome extension</a></h3>
+      <p>
+        This Chrome extension takes in user input and responds with a randomly
+        generated phrase! It has helped me learn Javascript, Chrome APIs, HTML, and CSS.
+      </p>
+      <p>&nbsp</p>
+      <h3><a href="https://github.com/rebroccoli/clinked-list">c linked list</a></h3>
+      <p>A Linked List I made to help me learn C. It has helped me strengthen my C and data structure knowledge.</p>
     </section>
 
     <script>
@@ -75,7 +87,7 @@
         for (var i = 0; i < sections.length; i++) {
           sections[i].classList.add("hidden");
         }
-        // load in new page 
+        // load in new page
         var section = document.getElementById(sectionId);
         section.classList.remove("hidden");
       }
